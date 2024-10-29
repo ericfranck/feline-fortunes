@@ -245,3 +245,25 @@ textarea {
   }
 }
 
+#fortunes{
+  font-family: "Arima", system-ui;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4rem;
+  transform: translateY(-400rem);
+  animation-name: spinFortunes;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fortunesContainer{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes spinFortunes {
+  0% {transform: translateY(-400rem);}
+  100% {transform: translateY(0rem);}
+}
+
